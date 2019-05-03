@@ -12,4 +12,4 @@ WORKDIR /var/lib/boinc
 COPY /cgroup.py /var/lib/boinc
 
 
-CMD python cgroup.py && boinc --attach_project ${boincurl} ${boinckey} --allow_multiple_clients --allow-gui-rpc
+CMD python cgroup.py && boinc --attach_project ${boincurl} ${boinckey} --allow_multiple_clients
