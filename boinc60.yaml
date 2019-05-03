@@ -13,7 +13,6 @@ spec:
       labels:
         app: wcg
     spec:
-      nodeName: k008
       containers:
       - name: latest
         image: siddharthbakshi/boincdemo
@@ -25,7 +24,7 @@ spec:
             memory: "5Gi"
           limits:
             cpu: "6"
-            memory: "24Gi"
+            memory: "8Gi"
         env:
         - name: boincurl
           valueFrom:
