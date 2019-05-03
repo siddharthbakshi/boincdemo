@@ -45,7 +45,7 @@ cpu_limit_percent=(((int(cpu)*100))/int(total))
 print(cpu_limit_percent)
 total_cores=int(total)/100000
 cpu_limit_percent=min(.8,math.log((cpu_limit_percent/total_cores)+1.4,10))*total_cores
-cpu_limit_percent=(cpu_limit_percent/total_cores)*90
+cpu_limit_percent=(cpu_limit_percent/total_cores)*100
 
 #f = open('/sys/fs/cgroup/cpu/cpu.cfs_quota_us', 'w')
 #pickle.dump(s,f)

@@ -13,7 +13,7 @@ spec:
       labels:
         app: wcg
     spec:
-      nodeName: 
+      nodeName: k008
       containers:
       - name: latest
         image: anshugoe/centos-boinc
