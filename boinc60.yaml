@@ -16,7 +16,7 @@ spec:
       nodeName: k008
       containers:
       - name: latest
-        image: anshugoe/centos-boinc
+        image: siddharthbakshi/boincdemo
         ports:
           - containerPort: 8080
         resources:

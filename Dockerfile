@@ -9,7 +9,7 @@ chmod -R g=u /var/lib/boinc
 # RUN rm /bin/boinc
 # COPY /boinc /bin 
 WORKDIR /var/lib/boinc
-COPY /cgroup.py /var/lib/boinc
+# COPY /cgroup.py /var/lib/boinc
 
-
-CMD python cgroup.py && boinc --attach_project ${boincurl} ${boinckey} --allow_multiple_clients
+CMD boinc --attach_project ${boincurl} ${boinckey} --allow_multiple_clients
+# CMD python cgroup.py && boinc --attach_project ${boincurl} ${boinckey} --allow_multiple_clients
